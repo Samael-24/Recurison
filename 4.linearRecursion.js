@@ -1,7 +1,7 @@
 // Linear with Recursion
 function l_R(arr,key,i){
-    if(i == arr.length) return -1;
-    if(arr[i]==key) return i;
+    if(i === arr.length) return -1;
+    if(arr[i]===key) return i;
 
     return l_R(arr,key,i+1);
 }
