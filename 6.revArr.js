@@ -16,7 +16,7 @@ function customReverse(data, start, end) {
         data[end] = temp;
         customReverse(data, start + 1, end - 1);
     }
-    console.warn(data)
+    return data
 }
 
-customReverse(data, 0, data.length - 1);
+console.log(customReverse(data, 0, data.length - 1));
