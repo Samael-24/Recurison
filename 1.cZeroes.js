@@ -16,3 +16,4 @@ const cZeroes =(n)=>{
 let n = 1050110
 console.log(cZeroes(n))
 console.log(cZeroes(100))
+console.log(cZeroes(1001100001))
