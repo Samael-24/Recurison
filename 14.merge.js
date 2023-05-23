@@ -6,20 +6,33 @@ function mergesort(arr) {
     const leftArr = arr.slice(0, mid)
     const rightArr = arr.slice(mid)
     return merge(mergesort(leftArr), mergesort(rightArr))
-    }
-    
-    function merge(leftArr, rightArr) {
+}
+
+function merge(leftArr, rightArr) {
     const sortedArr = []
     while (leftArr.length && rightArr.length) {
         if (leftArr[0] <= rightArr[0]) {
-          sortedArr.push(leftArr.shift())
+            sortedArr.push(leftArr.shift())
         } else {
-          sortedArr.push(rightArr.shift())
+            sortedArr.push(rightArr.shift())
         }
     }
-    const resultArr = [...sortedArr, ...leftArr, ...rightArr]
+    const resultArr = [
+        ... sortedArr,
+        ... leftArr,
+        ... rightArr
+    ]
     return resultArr
-    }
-    
-    const arr = [8, 20, -2, 4, -6,-3,7,9]
-    console.log(mergesort(arr))
+}
+
+const arr = [
+    8,
+    20,
+    -2,
+    4,
+    -6,
+    -3,
+    7,
+    9
+]
+console.log(mergesort(arr))
