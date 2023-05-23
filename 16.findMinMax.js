@@ -19,7 +19,7 @@ function findMinAndMax(arr, start, end) {
     ];
 }
 
-var arr = [
+const arr = [
     11,
     21,
     23,
